@@ -53,7 +53,7 @@ window.onclick = function(event) {
 document.onkeydown = function(evt) {
   evt = evt || window.event;
   if (evt.keyCode == 27) {
-    closeMenuIfOpen();
+    closeMenuIfOpen("dropdownMenuOne");
     closeMenuIfOpen("dropdownMenuTwo");
   }
 };
