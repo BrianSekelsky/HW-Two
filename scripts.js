@@ -1,7 +1,7 @@
 const HIDE_OFFSET = "-70px"; // This is the amount of pixels to move the menu up when it closes
 const SHOW_OFFSET = "70px"; // This is the amount of pixels to move the menu down when it opens
 
-function toggleMenu(idName = "dropdownMenuOne") {
+function toggleMenu(idName) {
   let menu = document.getElementById(idName);
   let otherMenu = "";
   if (idName === "dropdownMenuOne") {
@@ -22,7 +22,7 @@ function toggleMenu(idName = "dropdownMenuOne") {
   }
 }
 
-function closeMenuIfOpen(idName = "dropdownMenuOne") {
+function closeMenuIfOpen(idName) {
   let menu = document.getElementById(idName);
   if (menu.style.marginTop === SHOW_OFFSET) {
     menu.style.marginTop = HIDE_OFFSET;
