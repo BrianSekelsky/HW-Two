@@ -1,3 +1,5 @@
+/*jshint esversion: 6 */
+
 const HIDE_OFFSET = "-70px"; // This is the amount of pixels to move the menu up when it closes
 const SHOW_OFFSET = "70px"; // This is the amount of pixels to move the menu down when it opens
 
