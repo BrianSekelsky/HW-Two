@@ -21,14 +21,17 @@ body {
     position: absolute;
     z-index: 1;
     font-size: 1.25em;
+    border: none;
 }
 
 #dropdownMenuOneButton {
     left: 0;
+    border-right: 1px solid white;
 }
 
 #dropdownMenuTwoButton {
     left: 250px;
+    border-left: 1px solid white;
 }
 
 .dropdownMenu-button:hover {
