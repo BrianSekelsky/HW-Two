@@ -1,0 +1,81 @@
+body {
+    font-family: sans-serif;
+}
+
+.dropdownMenu {
+    width: 500px;
+    margin: -8px;
+}
+
+.dropdownMenu-buttonWrapper {
+    position: absolute;
+    width: 100%;
+}
+
+.dropdownMenu-button {
+    background-color: #150080;
+    color: white;
+    width: 250px;
+    height: 70px;
+    transition: .2s;
+    position: absolute;
+    z-index: 1;
+    font-size: 1.25em;
+}
+
+#dropdownMenuOneButton {
+    left: 0;
+}
+
+#dropdownMenuTwoButton {
+    left: 250px;
+}
+
+.dropdownMenu-button:hover {
+    cursor: pointer;
+    background-color: #2D8956;
+}
+
+.dropdownMenu-contentWrapper {
+    position: absolute;
+    width: 100%;
+}
+
+.dropdownMenu-content {
+    background-color: white;
+    border: 2px solid black;
+}
+
+.dropdownMenu-content li {
+    list-style: none;
+    padding-top: 5px;
+}
+
+/* It's probably not ideal to define these properties twice for each menu.
+   This is something I would try to fix with more time */
+#dropdownMenuOne {
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+    width: 246px;
+    max-height: 300px;
+    margin-top: -70px;
+    transition: 1s;
+    transition-property: margin-top;
+	transition-duration: .5s;
+	transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+}
+
+#dropdownMenuTwo {
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+    width: 246px;
+    max-height: 300px;
+    margin-top: -70px;
+    left: 250px;
+    transition: 1s;
+    transition-property: margin-top;
+	transition-duration: .5s;
+	transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+}
