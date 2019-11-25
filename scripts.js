@@ -66,9 +66,10 @@ function toggleFocus(parent, focusable) {
   var elements = getFocusableElements(parent);
 
   elements.forEach(function(el) {
+    console.log(el);
     if (focusable) {
       if (el.getAttribute("data-tabindex") !== undefined) {
-        el.setAttribute("tabindex", el.getAttribute("data-tabindex"));
+        el.setAttribute("tabindex", 0);
       } else {
         el.removeAttribute("tabindex");
       }
